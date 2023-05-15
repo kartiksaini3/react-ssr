@@ -3,13 +3,13 @@ const React = require("react");
 const ReactDOMServer = require("react-dom/server");
 const { default: App } = require("../src/App");
 const path = require("path");
-const { default: AppServer } = require("../src/AppServer");
+// const { default: AppServer } = require("../src/AppServer");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.get("/", (req, res) => {
-  const content = ReactDOMServer.renderToString(<AppServer />);
+  const content = ReactDOMServer.renderToString(<App />);
   const html = `
     <!DOCTYPE html>
     <html lang="en">

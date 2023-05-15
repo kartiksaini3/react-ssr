@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import AppServer from "./AppServer";
+// import AppServer from "./AppServer";
 // import reportWebVitals from "./reportWebVitals";
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
-ReactDOM.hydrate(<AppServer />, document.getElementById("root"));
+ReactDOM.hydrate(<App />, document.getElementById("root"));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
